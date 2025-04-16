@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-15</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Aeon | a world of ideas (aeon.co)</h2> (1)</summary><ul><a class="li" href="https://aeon.co/essays/a-resurrected-defence-of-beanbag-genetics?utm_source=rss-feed"><li><div class="title">Beanbag genetics</div><div class="domain">aeon.co &bull; April 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (5)</summary><ul><a class="li" href="https://tora.bearblog.dev/04/"><li><div class="title">hypocrisy</div><div class="domain">tora.bearblog.dev &bull; April 15, 2025</div></li></a><a class="li" href="https://posthuman.blog/i-made-an-ai-gf/"><li><div class="title">I Built an AI Girlfriend And It Ruined My Life</div><div class="domain">posthuman.blog &bull; April 15, 2025</div></li></a><a class="li" href="https://notes.krueger.ink/i-will-not-hide-who-i-am/"><li><div class="title">🏳️‍🌈 I Will Not Hide Who I Am</div><div class="domain">notes.krueger.ink &bull; April 15, 2025</div></li></a><a class="li" href="https://blog.avas.space/education-gratitude/"><li><div class="title">gratitude for education</div><div class="domain">blog.avas.space &bull; April 15, 2025</div></li></a><a class="li" href="https://themindofruss.com/50-states-of-folklore-georgia-lake-laniers-hidden-graves/"><li><div class="title">50 States of Folklore - Georgia: Lake Lanier's Hidden Graves</div><div class="domain">themindofruss.com &bull; April 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (4)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/science-answer-where-universe-come-from/"><li><div class="title">Science’s best answer to “where did the Universe come from?”</div><div class="domain">bigthink.com &bull; April 15, 2025</div></li></a><a class="li" href="https://bigthink.com/series/the-big-think-interview/hannah-ritchie-paris-agreement/"><li><div class="title">Is it too late for us to slow climate warming?</div><div class="domain">bigthink.com &bull; April 15, 2025</div></li></a><a class="li" href="https://bigthink.com/the-long-game/the-barry-ritholtz-interview-smart-is-good-smart-and-lucky-is-better/"><li><div class="title">The Barry Ritholtz Interview: “Smart is good. Smart and lucky is better”</div><div class="domain">bigthink.com &bull; April 15, 2025</div></li></a><a class="li" href="https://bigthink.com/thinking/the-1903-letter-thats-helped-countless-people-embrace-the-unknown/"><li><div class="title">The 1903 letter that’s helped countless people embrace the unknown</div><div class="domain">bigthink.com &bull; April 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">NOEMA (noemamag.com)</h2> (1)</summary><ul><a class="li" href="https://www.noemamag.com/trumps-climate-denial-is-a-gift-to-china-whos-ready-to-receive-it"><li><div class="title">Trump’s Climate Denial Is A Gift To China</div><div class="domain">noemamag.com &bull; April 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (themarginalian.org)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/04/15/loneliness-forever/"><li><div class="title">3 Kinds of Loneliness and 4 Kinds of Forever</div><div class="domain">themarginalian.org &bull; April 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">NEVER TOO SMALL (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=b0yCX4LoFvI"><li><div class="title">LIVE | Japanese Artist’s Unique Open Air Family Home, Tokyo | NEVER TOO SMALL</div><div class="domain">youtube.com &bull; April 15, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
