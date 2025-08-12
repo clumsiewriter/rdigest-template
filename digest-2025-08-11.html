@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-11</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Aeon | a world of ideas (aeon.co)</h2> (2)</summary><ul><a class="li" href="https://aeon.co/essays/at-the-heart-of-surfing-is-the-pursuit-of-moments-so-pure-they-clean-you-out?utm_source=rss-feed"><li><div class="title">The secret</div><div class="domain">aeon.co &bull; August 11, 2025</div></li></a><a class="li" href="https://aeon.co/videos/how-an-artist-learned-to-co-live-with-the-distressing-voice-in-her-head?utm_source=rss-feed"><li><div class="title">Bridging the gap</div><div class="domain">aeon.co &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (6)</summary><ul><a class="li" href="https://megancarnes.blog/good-recipes/"><li><div class="title">Good recipes</div><div class="domain">megancarnes.blog &bull; August 11, 2025</div></li></a><a class="li" href="https://classidential.bearblog.dev/should-i-admit-this/"><li><div class="title">Should I Admit This?</div><div class="domain">classidential.bearblog.dev &bull; August 11, 2025</div></li></a><a class="li" href="https://jeddacp.me/romanticizing-an-ordinary-sunday/"><li><div class="title">Romanticizing an Ordinary Sunday</div><div class="domain">jeddacp.me &bull; August 11, 2025</div></li></a><a class="li" href="https://kami.bearblog.dev/to-the-guy-using-yandex-browser-to-read-my-blogposts/"><li><div class="title">To the guy using Yandex Browser to read my blogposts</div><div class="domain">kami.bearblog.dev &bull; August 11, 2025</div></li></a><a class="li" href="https://jeddacp.me/shineforthbeauty/"><li><div class="title">My San Francisco Hair and Makeup Artist</div><div class="domain">jeddacp.me &bull; August 11, 2025</div></li></a><a class="li" href="https://josephlee.bearblog.dev/making-sense-of-logical-people/"><li><div class="title">Making Sense of "Logical" People</div><div class="domain">josephlee.bearblog.dev &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (6)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/fastest-cheapest-particle-physics-higgs/"><li><div class="title">The fastest, cheapest particle physics path to a Higgs factory</div><div class="domain">bigthink.com &bull; August 11, 2025</div></li></a><a class="li" href="https://bigthink.com/the-well/the-case-for-useless-knowledge-asking-questions/"><li><div class="title">The case for useless knowledge</div><div class="domain">bigthink.com &bull; August 11, 2025</div></li></a><a class="li" href="https://bigthink.com/series/the-big-think-interview/inorganic-intelligence/"><li><div class="title">Yuval Noah Harari: How to safeguard your mind in the age of junk information</div><div class="domain">bigthink.com &bull; August 11, 2025</div></li></a><a class="li" href="https://bigthink.com/business/how-dells-membrane-paved-the-way-for-headless-agents/"><li><div class="title">How Dell’s membrane paved the way for “headless agents”</div><div class="domain">bigthink.com &bull; August 11, 2025</div></li></a><a class="li" href="https://bigthink.com/smart-skills/how-to-instantly-be-better-at-things/"><li><div class="title">How to instantly be better at things</div><div class="domain">bigthink.com &bull; August 11, 2025</div></li></a><a class="li" href="https://bigthink.com/plus/four-requirements-for-high-performance/"><li><div class="title">Four Requirements for High Performance</div><div class="domain">bigthink.com &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (themarginalian.org)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/08/11/intention-trommer/"><li><div class="title">Wonder, Play, and How to Be More Alive</div><div class="domain">themarginalian.org &bull; August 11, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
