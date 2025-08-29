@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-28</span>:</h1>
+  <p class="summary">There are 9 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://combatdavey.net/august-28-etc/"><li><div class="title">august 28 etc</div><div class="domain">combatdavey.net &bull; August 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (5)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/theoretical-physics-broken-or-hard/"><li><div class="title">No, theoretical physics isn’t broken; it’s just very hard</div><div class="domain">bigthink.com &bull; August 28, 2025</div></li></a><a class="li" href="https://bigthink.com/series/the-big-think-interview/history-of-natural-selection/"><li><div class="title">The history of natural selection, in 7 minutes</div><div class="domain">bigthink.com &bull; August 28, 2025</div></li></a><a class="li" href="https://bigthink.com/business/what-the-forest-can-teach-us-about-resilience/"><li><div class="title">What the forest can teach us about resilience</div><div class="domain">bigthink.com &bull; August 28, 2025</div></li></a><a class="li" href="https://bigthink.com/mini-philosophy/the-closure-machine-how-humans-really-see-the-world/"><li><div class="title">The “Closure Machine”: How humans really see the world</div><div class="domain">bigthink.com &bull; August 28, 2025</div></li></a><a class="li" href="https://bigthink.com/books/fire-and-human-evolution/"><li><div class="title">How taming fire made us human</div><div class="domain">bigthink.com &bull; August 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">NOEMA (noemamag.com)</h2> (1)</summary><ul><a class="li" href="https://www.noemamag.com/the-vanishing-art-of-building-sacred-spaces"><li><div class="title">The Vanishing Art Of Building Sacred Spaces</div><div class="domain">noemamag.com &bull; August 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">notes.druchan.com — RSS Feed (notes.druchan.com)</h2> (1)</summary><ul><a class="li" href="https://notes.druchan.com/books-that-stayed-1"><li><div class="title">Books that stayed - N°1</div><div class="domain">notes.druchan.com &bull; August 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">NEVER TOO SMALL (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uh80zTkiyGQ"><li><div class="title">Playful Design on a Budget in Small Barcelona Apartment, 52sqm/559sqft</div><div class="domain">youtube.com &bull; August 28, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
