@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-08</span>:</h1>
+  <p class="summary">There are 11 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://taylorstimes.bearblog.dev/self-hosting/"><li><div class="title">self hosting</div><div class="domain">taylorstimes.bearblog.dev &bull; January 08, 2026</div></li></a><a class="li" href="https://blog.absurdpirate.com/sitting-on-the-fence-like-that/"><li><div class="title">careful you don't split your ass sitting on the fence like that</div><div class="domain">blog.absurdpirate.com &bull; January 08, 2026</div></li></a><a class="li" href="https://pretendtypewriter.net/bring-back-emails-as-a-form-of-communication/"><li><div class="title">BRING BACK EMAILS AS A FORM OF COMMUNICATION</div><div class="domain">pretendtypewriter.net &bull; January 08, 2026</div></li></a><a class="li" href="https://robertbirming.com/still-there-happy/"><li><div class="title">Still there, still happy</div><div class="domain">robertbirming.com &bull; January 08, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (5)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/zenos-paradox/"><li><div class="title">Zeno’s Paradox resolved by physics, not by math alone</div><div class="domain">bigthink.com &bull; January 08, 2026</div></li></a><a class="li" href="https://bigthink.com/business/how-ai-is-making-us-think-short-term/"><li><div class="title">How AI is making us think short-term</div><div class="domain">bigthink.com &bull; January 08, 2026</div></li></a><a class="li" href="https://bigthink.com/books/invisible-illness/"><li><div class="title">The medical myth that still shapes misunderstandings of women’s health</div><div class="domain">bigthink.com &bull; January 08, 2026</div></li></a><a class="li" href="https://bigthink.com/series/the-big-think-interview/online-role-models-boys/"><li><div class="title">The real reason boys turn to extreme online role models</div><div class="domain">bigthink.com &bull; January 08, 2026</div></li></a><a class="li" href="https://bigthink.com/series/full-interview/stoicism-full-interview/"><li><div class="title">Why Stoicism treats self-control as a form of intelligence</div><div class="domain">bigthink.com &bull; January 08, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">NOEMA (noemamag.com)</h2> (1)</summary><ul><a class="li" href="https://www.noemamag.com/a-new-anti-political-fervor"><li><div class="title">A New Anti-Political Fervor</div><div class="domain">noemamag.com &bull; January 08, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">NEVER TOO SMALL (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Eius90RPkvM"><li><div class="title">Small Minimalist Paris Apartment Designed with Hidden Storage, 34sqm/365sqft</div><div class="domain">youtube.com &bull; January 08, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
