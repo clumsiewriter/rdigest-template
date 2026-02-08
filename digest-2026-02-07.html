@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-02-07</span>:</h1>
+  <p class="summary">There are 7 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://jbrr.dev/trending-posts/"><li><div class="title">Trending Posts</div><div class="domain">jbrr.dev &bull; February 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (2)</summary><ul><a class="li" href="https://bigthink.com/books/how-the-dark-forest-theory-helps-us-understand-the-internet/"><li><div class="title">How the “dark forest theory” helps us understand the internet</div><div class="domain">bigthink.com &bull; February 07, 2026</div></li></a><a class="li" href="https://bigthink.com/starts-with-a-bang/starts-with-a-bang-podcast-126-the-origin-of-dust/"><li><div class="title">Starts With A Bang Podcast #126 – The origin of dust</div><div class="domain">bigthink.com &bull; February 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">notes.druchan.com — RSS Feed (notes.druchan.com)</h2> (1)</summary><ul><a class="li" href="https://notes.druchan.com/one-year-of-vaak"><li><div class="title">One year of vāk</div><div class="domain">notes.druchan.com &bull; February 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (themarginalian.org)</h2> (3)</summary><ul><a class="li" href="https://www.themarginalian.org/2026/02/07/a-life-of-ones-own-joanna-field-marion-milner/"><li><div class="title">A Life of One’s Own: A Penetrating Century-Old Field Guide to Self-Possession, Mindful Perception, and the Art of Knowing What You Really Want</div><div class="domain">themarginalian.org &bull; February 07, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/07/general-theory-of-love-separation/"><li><div class="title">Relationship Rupture and the Limbic System: The Physiology of Abandonment and Separation</div><div class="domain">themarginalian.org &bull; February 07, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/07/leonard-cohen-anger-resistance/"><li><div class="title">Leonard Cohen on the Antidote to Anger and the Meaning of Resistance</div><div class="domain">themarginalian.org &bull; February 07, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
