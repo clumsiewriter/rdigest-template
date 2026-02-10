@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-02-09</span>:</h1>
+  <p class="summary">There are 10 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Aeon | a world of ideas (aeon.co)</h2> (2)</summary><ul><a class="li" href="https://aeon.co/essays/orcas-havent-changed-but-our-view-of-the-killer-whale-has?utm_source=rss-feed"><li><div class="title">Orcas and ourselves</div><div class="domain">aeon.co &bull; February 09, 2026</div></li></a><a class="li" href="https://aeon.co/videos/time-is-real-if-you-view-it-through-the-lens-of-heat?utm_source=rss-feed"><li><div class="title">Carlo Rovelli: thermal time</div><div class="domain">aeon.co &bull; February 09, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://robertbirming.com/bear-hug-embracing/"><li><div class="title">Bear Hug, embracing Bear’s theme</div><div class="domain">robertbirming.com &bull; February 09, 2026</div></li></a><a class="li" href="https://skullandweasel.com/hello-bear-blog/"><li><div class="title">Hello, Bear Blog!</div><div class="domain">skullandweasel.com &bull; February 09, 2026</div></li></a><a class="li" href="https://blog.absurdpirate.com/i-dont-need-social-media-to-stay-in-touch/"><li><div class="title">i don't need social media to stay in touch</div><div class="domain">blog.absurdpirate.com &bull; February 09, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (3)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/claims-extraterrestrial-life-7-hurdles/"><li><div class="title">All claims of extraterrestrial life must pass these 7 hurdles</div><div class="domain">bigthink.com &bull; February 09, 2026</div></li></a><a class="li" href="https://bigthink.com/business/what-the-rise-and-fall-of-julius-caesar-can-teach-us-about-eq/"><li><div class="title">What the rise and fall of Julius Caesar can teach us about EQ</div><div class="domain">bigthink.com &bull; February 09, 2026</div></li></a><a class="li" href="https://bigthink.com/the-past/ancient-ai/"><li><div class="title">The deep history of AI began 3,000 years ago</div><div class="domain">bigthink.com &bull; February 09, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (themarginalian.org)</h2> (2)</summary><ul><a class="li" href="https://www.themarginalian.org/2026/02/09/hesse-soul/"><li><div class="title">Hermann Hesse on Discovering the Soul Beneath the Self and the Key to Finding Peace</div><div class="domain">themarginalian.org &bull; February 09, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/09/albert-camus-interview-absurd/"><li><div class="title">Albert Camus on the Three Antidotes to the Absurdity of Life</div><div class="domain">themarginalian.org &bull; February 09, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
