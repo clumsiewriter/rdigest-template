@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-02-13</span>:</h1>
+  <p class="summary">There are 12 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Aeon | a world of ideas (aeon.co)</h2> (1)</summary><ul><a class="li" href="https://aeon.co/essays/institutions-are-how-we-scale-up-cooperation-among-millions?utm_source=rss-feed"><li><div class="title">Guarding the guardians</div><div class="domain">aeon.co &bull; February 13, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://mgx.bearblog.dev/when-you-anthropomorphize-llms/"><li><div class="title">when you anthropomorphize llms</div><div class="domain">mgx.bearblog.dev &bull; February 13, 2026</div></li></a><a class="li" href="https://technically-good.ca/feeding-the-fire-psychology-engagement-and-algorithmic-media/"><li><div class="title">Feeding the Fire: Psychology, Engagement, and Algorithmic Media</div><div class="domain">technically-good.ca &bull; February 13, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (4)</summary><ul><a class="li" href="https://bigthink.com/series/full-interview/chip-war-chris-miller/"><li><div class="title">The most important piece of technology in your lifetime is this tiny chip</div><div class="domain">bigthink.com &bull; February 13, 2026</div></li></a><a class="li" href="https://bigthink.com/starts-with-a-bang/see-expanding-universe-changing/"><li><div class="title">Ask Ethan: Can we see the expanding Universe changing?</div><div class="domain">bigthink.com &bull; February 13, 2026</div></li></a><a class="li" href="https://bigthink.com/science-tech/sex-in-space/"><li><div class="title">Love in low gravity: The surprisingly high stakes of sex in space</div><div class="domain">bigthink.com &bull; February 13, 2026</div></li></a><a class="li" href="https://bigthink.com/mind-behavior/its-never-too-late-to-stop-hating-math/"><li><div class="title">It’s never too late to stop hating math</div><div class="domain">bigthink.com &bull; February 13, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">NOEMA (noemamag.com)</h2> (1)</summary><ul><a class="li" href="https://www.noemamag.com/where-there-is-connectivity-there-is-surveillance"><li><div class="title">Where There Is Connectivity There Is Surveillance</div><div class="domain">noemamag.com &bull; February 13, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (themarginalian.org)</h2> (3)</summary><ul><a class="li" href="https://www.themarginalian.org/2026/02/13/nick-cave-advice/"><li><div class="title">How to Grow Up: Nick Cave’s Life-Advice to a 13-Year-Old</div><div class="domain">themarginalian.org &bull; February 13, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/13/rachel-carson-dorothy-freeman-letters/"><li><div class="title">The Monarchs, Music, and the Meaning of Life: The Most Touching Deathbed Love Letter Ever Written</div><div class="domain">themarginalian.org &bull; February 13, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/13/simone-de-beauvoir-coming-of-age/"><li><div class="title">How to Keep Life from Becoming a Parody of Itself: Simone de Beauvoir on the Art of Growing Older</div><div class="domain">themarginalian.org &bull; February 13, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">NEVER TOO SMALL (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/MI_-GUOsWgA"><li><div class="title">Creative Couple’s Small DIY Amsterdam Home ❤️ #nevertoosmall #shorts</div><div class="domain">youtube.com &bull; February 13, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
