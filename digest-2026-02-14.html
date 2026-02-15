@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-02-14</span>:</h1>
+  <p class="summary">There are 8 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://combatdavey.net/february-13-2026/"><li><div class="title">february 13 dsm</div><div class="domain">combatdavey.net &bull; February 14, 2026</div></li></a><a class="li" href="https://anon0.bearblog.dev/trump-the-best-thing-i-have-read-on-him-and-his-fans/"><li><div class="title">Trump: the best thing I have read on him and his fans</div><div class="domain">anon0.bearblog.dev &bull; February 14, 2026</div></li></a><a class="li" href="https://thecynicalnerd.bearblog.dev/love-in-the-time-of-large-language-models-a-valentines-day-price-check/"><li><div class="title">Love in the Time of Large Language Models: A Valentine's Day Price Check</div><div class="domain">thecynicalnerd.bearblog.dev &bull; February 14, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (themarginalian.org)</h2> (4)</summary><ul><a class="li" href="https://www.themarginalian.org/2026/02/14/love-and-saint-augustine-hannah-arendt/"><li><div class="title">Hannah Arendt on Love and How to Live with the Fundamental Fear of Loss</div><div class="domain">themarginalian.org &bull; February 14, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/14/camus-myth-of-sisyphus-suicide/"><li><div class="title">Albert Camus on the Will to Live and the Most Important Question of Existence</div><div class="domain">themarginalian.org &bull; February 14, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/14/lincoln-melancholy-depression/"><li><div class="title">Undoing as Remaking: How Abraham Lincoln Drew Poetry and Power from His Suicidal Depression</div><div class="domain">themarginalian.org &bull; February 14, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/14/love-anyway/"><li><div class="title">Love Anyway</div><div class="domain">themarginalian.org &bull; February 14, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Working Theorys (workingtheorys.com)</h2> (1)</summary><ul><a class="li" href="https://www.workingtheorys.com/p/proof-of-humanity"><li><div class="title">Proof of Humanity</div><div class="domain">workingtheorys.com &bull; February 14, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
