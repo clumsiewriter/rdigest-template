@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-02-24</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Aeon | a world of ideas (aeon.co)</h2> (1)</summary><ul><a class="li" href="https://aeon.co/essays/instrumentalisation-is-making-everything-a-means-to-an-end?utm_source=rss-feed"><li><div class="title">The six-second hug</div><div class="domain">aeon.co &bull; February 24, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (5)</summary><ul><a class="li" href="https://woolgathering.bearblog.dev/ratings-mean-nothing-except-when-they-dont/"><li><div class="title">ratings mean nothing except when they don't</div><div class="domain">woolgathering.bearblog.dev &bull; February 24, 2026</div></li></a><a class="li" href="https://nickhayes.bearblog.dev/i-watch-porn/"><li><div class="title">I watch porn</div><div class="domain">nickhayes.bearblog.dev &bull; February 24, 2026</div></li></a><a class="li" href="https://unturnedhovel.bearblog.dev/trying-to-be-brave/"><li><div class="title">Trying to Be Brave</div><div class="domain">unturnedhovel.bearblog.dev &bull; February 24, 2026</div></li></a><a class="li" href="https://herman.bearblog.dev/vulnerability-as-a-service/"><li><div class="title">Vulnerability as a Service</div><div class="domain">herman.bearblog.dev &bull; February 24, 2026</div></li></a><a class="li" href="https://nickhayes.bearblog.dev/do-not-comply-in-advance/"><li><div class="title">Do not comply in advance</div><div class="domain">nickhayes.bearblog.dev &bull; February 24, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (3)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/5-biggest-obstacles-ai-data-centers-space/"><li><div class="title">The 5 biggest obstacles to AI data centers in space</div><div class="domain">bigthink.com &bull; February 24, 2026</div></li></a><a class="li" href="https://bigthink.com/business/9-confucian-rules-for-emotional-intelligence-at-work/"><li><div class="title">9 Confucian rules for emotional intelligence at work</div><div class="domain">bigthink.com &bull; February 24, 2026</div></li></a><a class="li" href="https://bigthink.com/history-society/dont-let-climate-fatalism-become-a-self-fulfilling-prophecy/"><li><div class="title">Don’t let climate fatalism become a self-fulfilling prophecy</div><div class="domain">bigthink.com &bull; February 24, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">NOEMA (noemamag.com)</h2> (1)</summary><ul><a class="li" href="https://www.noemamag.com/why-ai-doesnt-need-a-mind-to-matter"><li><div class="title">Why AI Doesn’t Need A ‘Mind’ To Matter</div><div class="domain">noemamag.com &bull; February 24, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (themarginalian.org)</h2> (6)</summary><ul><a class="li" href="https://www.themarginalian.org/2026/02/23/tim-ferriss-tools-of-titans-depression/"><li><div class="title">Tim Ferriss on How He Survived Suicidal Depression and His Tools for Warding Off the Darkness</div><div class="domain">themarginalian.org &bull; February 24, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/24/how-to-grow-old-bertrand-russell/"><li><div class="title">How to Grow Old: Bertrand Russell on What Makes a Fulfilling Life</div><div class="domain">themarginalian.org &bull; February 24, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/24/moonlight/"><li><div class="title">Moonlight and the Magic of the Unnecessary</div><div class="domain">themarginalian.org &bull; February 24, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/24/parts/"><li><div class="title">The Parts We Live With: D.H. Lawrence and the Yearning for Living Unison</div><div class="domain">themarginalian.org &bull; February 24, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/24/diane-ackerman-the-planets/"><li><div class="title">A Cosmic Pastoral: Diane Ackerman on the Intimate in the Infinite and the Responsibility of Rapture</div><div class="domain">themarginalian.org &bull; February 24, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/02/24/richard-powers-music/"><li><div class="title">Music and the Body: Richard Powers on the Power of Song</div><div class="domain">themarginalian.org &bull; February 24, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
